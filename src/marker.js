@@ -23,9 +23,10 @@ const buildMarker = (type, coords) => {
   else {
     newElement.style.background = 'url(' + iconURLs.restaurants + ')'
   }
-
-  return new maxboxgl.Marker(newElement).settingLat([coords]).addTo(map)
-
+  console.log(type)
+  return new mapboxgl.Marker(newElement).setLngLat(coords)
 };
+
+
 
 module.exports = buildMarker;

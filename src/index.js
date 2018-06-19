@@ -18,16 +18,12 @@ markerDomEl.style.width = "32px";
 markerDomEl.style.height = "39px";
 markerDomEl.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
 
-const markerDomEl2 = document.createElement("div"); // Create a new, detached DIV
-markerDomEl2.style.width = "32px";
-markerDomEl2.style.height = "39px";
-markerDomEl2.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
 
 new mapboxgl.Marker(markerDomEl).setLngLat([-74.009, 40.705]).addTo(map);
 
-new mapboxgl.Marker(markerDomEl2).setLngLat([-73.98, 40.74]).addTo(map);
 
-const marker = buildMarker("activity", [-73.7516, 40.7516]); // or [-87.6354, 41.8885]
+
+const marker = buildMarker('activity', [-74.00, 40.7233]); // or [-87.6354, 41.8885]
 console.log(marker)
 marker.addTo(map);
 
